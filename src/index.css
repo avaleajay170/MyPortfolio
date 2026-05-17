@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Variables ─────────────────────────────────────────── */
+:root {
+  --primary: #6C63FF;
+  --secondary: #FF6584;
+  --accent: #00D4FF;
+  --bg-light: #F8F9FF;
+  --bg-dark: #0D0D1A;
+  --surface-light: rgba(255, 255, 255, 0.75);
+  --surface-dark: rgba(15, 15, 35, 0.75);
+  --text-light: #1A1A2E;
+  --text-dark: #E8E8F8;
+  --text-muted-light: #6E7191;
+  --text-muted-dark: #9999BB;
+  --border-light: rgba(108, 99, 255, 0.15);
+  --border-dark: rgba(108, 99, 255, 0.25);
+}
+
+/* ─── Base Reset ────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+}
+
+.dark body {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6C63FF, #FF6584);
+  border-radius: 99px;
+}
+
+/* ─── Selection ─────────────────────────────────────────────── */
+::selection {
+  background: rgba(108, 99, 255, 0.3);
+  color: inherit;
+}
+
+/* ─── Glass Morphism Utility ────────────────────────────────── */
+.glass {
+  background: var(--surface-light);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-light);
+}
+
+.dark .glass {
+  background: var(--surface-dark);
+  border: 1px solid var(--border-dark);
+}
+
+/* ─── Gradient Text ─────────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #6C63FF, #FF6584);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-cool {
+  background: linear-gradient(135deg, #6C63FF, #00D4FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Section Base ──────────────────────────────────────────── */
+.section-padding {
+  padding: 100px 0;
+}
+
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ─── Gradient Button ───────────────────────────────────────── */
+.btn-primary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #6C63FF, #FF6584);
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #8B85FF, #FF85A0);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(108, 99, 255, 0.45);
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
+}
+
+.btn-primary span { position: relative; z-index: 1; }
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 27px;
+  background: transparent;
+  color: var(--primary);
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(108, 99, 255, 0.35);
+}
+
+/* ─── Floating Blob ─────────────────────────────────────────── */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.dark .blob { opacity: 0.15; }
+
+/* ─── Section Heading ───────────────────────────────────────── */
+.section-tag {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, rgba(108,99,255,0.12), rgba(255,101,132,0.12));
+  border: 1px solid rgba(108,99,255,0.25);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+/* ─── Progress Bar Animation ────────────────────────────────── */
+.progress-bar {
+  height: 6px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, #6C63FF, #FF6584);
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── Card Hover Glow ───────────────────────────────────────── */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px rgba(108, 99, 255, 0.2);
+}
+
+.dark .card-hover:hover {
+  box-shadow: 0 24px 60px rgba(108, 99, 255, 0.3);
+}
+
+/* ─── Loader ─────────────────────────────────────────────────── */
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #0D0D1A, #16163A);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* ─── Timeline vertical line ───────────────────────────────── */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, #6C63FF, #FF6584, #00D4FF);
+}
+
+/* ─── Typing cursor animation ───────────────────────────────── */
+.type-cursor::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ─── Particle canvas ───────────────────────────────────────── */
+#particles-canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* ─── Responsive utilities ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 70px 0;
+  }
+  .timeline-line {
+    left: 24px;
+  }
+}

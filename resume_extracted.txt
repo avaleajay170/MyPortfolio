@@ -1,0 +1,47 @@
+AJAY AVALE  
+Pune,  Maharashtra,  India  
++91-8624020411  avaleajay95@gmail.com  | Link edin | GitHub  
+ 
+Summary  
+Information Technology student with strong foundations in Data Structures, full -stack development, and artificial intelligence. 
+Experienced in developing scalable web and mobile applications using Python, Flask, Flutter, Firebase, and REST APIs, with a focus 
+on building secure and efficient software systems.  
+Education  
+Vishwakarma  Institute  of Technology,  Pune  2025  – 2028  (Expected)  
+B.Tech  in Information  Technology  (Direct  Second  Year)  CGPA:  9.00 / 10.0  
+AISSMS Polytechnic,  Pune  2022 – 2025  
+Diploma  in Information Technology  Percentage:  92.06% 
+Experience  
+Sumago Infotech Pvt.  Ltd.  June  2024  – July  2024  
+Trainee Software Developer  Intern  Pune,  India  
+– Developed full -stack web applications using Python, Django, and Flask.  
+– Gained hands -on experience in backend logic, database integration, and UI development during a 6 -week industrial training program.  
+Projects  
+Attendance System using Geolocation and Browser Fingerprinting  | Python, Flask, MySQL, JavaScript  
+– Built a secure web -based attendance system using geolocation and browser fingerprinting to prevent proxy 
+attendance.  
+– Implemented automated authentication and real -time attendance logging for accurate tracking and transparency.  
+TrustPay  – AI-Powered Fintech Payment App  | Flutter , Firebase  
+– Built  fintech  app with Flutter  frontend  and Flask  backend  for secure  UPI-style  transactions.  
+– Implemented  fraud  detection:  device  binding,  SIM change  detection,  geo-velocity  checks.  
+– Implemented  secure  authentication  and real-time transaction  monitoring  using  REST  APIs  and Firebase  backend.  
+– Designed  Trusted  Circle  verification  with Firebase  security  alerts.  
+CivicSphere – AI-Powered Civic Issue Intelligence Platform  |  Flask, Firebase, Google Maps API, Python  
+– Built a geo -fenced civic reporting platform for citizens to report municipal issues within Pune city.  
+– Implemented automatic constituency detection, smart complaint routing, and escalation workflows.  
+– Designed a public transparency dashboard to track complaint status and resolution updates.  
+Technical  Skills  
+Languages:  C, C++,  Java, Python,  JavaScript  
+Frameworks:  Django, Flask, Flutter  
+Backend:  REST  APIs,  JWT  Authentication  
+Web  Development:  HTML,  CSS,  JavaScript , React  
+Databases:  MySQL, SQL, Firebase, MongoDB  
+Core CS:  DSA,  OOP,  DBMS,  Operating  Systems,  Computer  
+Networks Tools:  Git, GitHub, Google Colab, VS Code, Antigravity  
+Achievements  
+• Best Solution Award – Innovate You | National Level Techathon 3.0 (2026) : Secured Top 15 out of 455+ teams 
+nationwide, awarded ₹10,000 cash prize and trophy for innovative solution development.  
+• Uplifter Award – Sumago Infotech Pvt. Ltd: Recognized for outstanding performance during 6 -week industrial 
+training in Full Stack Development using Python.  
+• 1st Prize – Tech Arena (Keystone School of Engineering): Secured 1st place for innovative project work 
+and problem -solving, awarded with a cash prize.  
