@@ -75,9 +75,7 @@ const About = () => {
               custom={4}
               className="flex flex-wrap gap-4 mt-2"
             >
-              <a href="/resume.pdf" download className="btn-primary">
-                <span>Download Resume</span>
-              </a>
+              <button onClick={() => document.getElementById('resume')?.scrollIntoView({ behavior: 'smooth' })} className="btn-primary"><span>View Resume</span></button>
               <button
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                 className="btn-outline"
