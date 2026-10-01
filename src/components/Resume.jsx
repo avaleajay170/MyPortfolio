@@ -56,6 +56,22 @@ const Resume = () => {
                 <ProjectLinks github="https://github.com/avaleajay170/CivicSphere" />
                 <ul className="list-disc ml-5 mt-2 space-y-1 text-sm"><li>Developed a geo-fenced civic issue reporting platform enabling location-aware complaint submission across Pune city.</li><li>Implemented AI-based classification, constituency detection, smart routing, and SLA escalation.</li><li>Built a transparent dashboard for real-time complaint tracking, status monitoring, severity analysis, and resolution updates.</li></ul>
               </ResumeItem>
+              <ResumeItem title="Smart Attendance System — Browser Fingerprint & Geolocation" subtitle="Python, Flask, JavaScript, Geolocation API, Browser Fingerprinting">
+                <ProjectLinks github="https://github.com/avaleajay170/Smart-Attendance-System-using-Browser-Fingerprint-and-Geolocation" />
+                <ul className="list-disc ml-5 mt-2 space-y-1 text-sm"><li>Built a web-based attendance system using browser fingerprinting and geolocation for location-aware attendance verification.</li></ul>
+              </ResumeItem>
+              <ResumeItem title="NyayaVault — Secure Legal Document Management" subtitle="React, FastAPI, PostgreSQL, Hyperledger Fabric">
+                <ProjectLinks github="https://github.com/avaleajay170/NyayaVault" />
+                <ul className="list-disc ml-5 mt-2 space-y-1 text-sm"><li>Developed a legal document management workflow focused on secure digital verification and trustworthy record handling.</li></ul>
+              </ResumeItem>
+              <ResumeItem title="LibrarySphere — Smart Library & Resource Intelligence Platform" subtitle="Python, Flask, MySQL, Docker">
+                <ProjectLinks github="https://github.com/avaleajay170/LibrarySphere" />
+                <ul className="list-disc ml-5 mt-2 space-y-1 text-sm"><li>Built a library management platform for resources, users, borrowing workflows, and database-backed operations.</li></ul>
+              </ResumeItem>
+              <ResumeItem title="Face Recognition Attendance System" subtitle="Python, OpenCV, Face Recognition">
+                <ProjectLinks github="https://github.com/avaleajay170/Face-Recognition-Attendance-System" />
+                <ul className="list-disc ml-5 mt-2 space-y-1 text-sm"><li>Developed a computer-vision attendance system using face recognition for automated identity-based attendance marking.</li></ul>
+              </ResumeItem>
             </ResumeSection>
 
             <ResumeSection title="Technical Skills">
@@ -68,7 +84,9 @@ const Resume = () => {
             </ResumeSection>
 
             <ResumeSection title="Certifications">
-              <p className="text-sm">SQL (Advanced) — HackerRank</p><p className="text-sm">REST API (Intermediate) — HackerRank</p><p className="text-sm">Docker and Kubernetes: The Complete Guide — Udemy</p>
+              <p className="text-sm"><a href="https://www.hackerrank.com/certificates/4ee32f6a913d" target="_blank" rel="noopener noreferrer" className="hover:text-[#6C63FF] hover:underline">SQL (Advanced) — HackerRank</a></p>
+              <p className="text-sm"><a href="https://www.hackerrank.com/certificates/a9074809c925" target="_blank" rel="noopener noreferrer" className="hover:text-[#6C63FF] hover:underline">REST API (Intermediate) — HackerRank</a></p>
+              <p className="text-sm"><a href="https://ude.my/UC-a24dde0e-ebea-44b0-8dcc-f946840def8a" target="_blank" rel="noopener noreferrer" className="hover:text-[#6C63FF] hover:underline">Docker and Kubernetes: The Complete Guide — Udemy</a></p>
             </ResumeSection>
 
             <ResumeSection title="Achievements">
