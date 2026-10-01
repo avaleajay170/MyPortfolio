@@ -10,6 +10,7 @@ const navLinks = [
   { label: 'Projects', href: '#projects' },
   { label: 'Timeline', href: '#timeline' },
   { label: 'Achievements', href: '#achievements' },
+  { label: 'Resume', href: '#resume' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -106,15 +107,7 @@ const Navbar = () => {
               {isDark ? <Sun size={18} /> : <Moon size={18} />}
             </motion.button>
 
-            <motion.a
-              href="/resume.pdf"
-              download
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="hidden lg:block btn-primary text-sm py-2 px-5"
-            >
-              <span>Resume</span>
-            </motion.a>
+            <motion.button onClick={() => scrollTo('#resume')} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="hidden lg:block btn-primary text-sm py-2 px-5"><span>View Resume</span></motion.button>
 
             <motion.button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -159,14 +152,7 @@ const Navbar = () => {
                   </motion.button>
                 );
               })}
-              <a
-                href="/resume.pdf"
-                download
-                className="btn-primary text-sm text-center mt-2"
-                onClick={() => setMenuOpen(false)}
-              >
-                <span>Download Resume</span>
-              </a>
+              <button onClick={() => scrollTo('#resume')} className="btn-primary text-sm text-center mt-2"><span>View Resume</span></button>
             </div>
           </motion.div>
         )}
