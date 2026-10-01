@@ -44,7 +44,7 @@ const About = () => {
               <span className="absolute -top-6 -left-4 text-7xl text-[#6C63FF] opacity-15 font-sora font-black select-none">"</span>
               <p className="text-[#6E7191] dark:text-[#9999BB] text-lg leading-relaxed font-inter relative z-10">
                 I'm an Information Technology student at Vishwakarma Institute of Technology, Pune,
-                with strong foundations in data structures, full stack development, and artificial intelligence.
+                with strong foundations in data structures, full stack development, and applied AI/ML.
               </p>
             </motion.div>
 
@@ -55,8 +55,7 @@ const About = () => {
               custom={2}
               className="text-[#6E7191] dark:text-[#9999BB] text-base leading-relaxed font-inter"
             >
-              I have hands-on experience building scalable web and mobile applications using Python,
-              Flask, Flutter, Firebase, MySQL, and REST APIs, with a focus on secure and efficient software systems.
+              I build practical software using Python, Django, Flask, React, Flutter, MySQL, MongoDB, Firebase, and AI/ML technologies.
             </motion.p>
 
             <motion.p
@@ -66,8 +65,7 @@ const About = () => {
               custom={3}
               className="text-[#6E7191] dark:text-[#9999BB] text-base leading-relaxed font-inter"
             >
-              My internship at Sumago Infotech strengthened my backend, database, and UI development
-              skills, and my projects reflect interests in fintech security, civic technology, and reliable verification systems.
+              My internship at Sumago Infotech strengthened my backend development, database integration, CRUD, and UI development skills. My projects focus on intelligent verification, legal workflows, and civic technology.
             </motion.p>
 
             <motion.div
