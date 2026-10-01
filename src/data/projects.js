@@ -47,6 +47,70 @@ export const projects = [
     emoji: 'CS',
     featured: true,
   },
+  {
+    id: 4,
+    title: 'Smart Attendance System - Browser Fingerprint & Geolocation',
+    category: 'Full Stack',
+    tags: ['Full Stack'],
+    description:
+      'An attendance system using browser fingerprinting and geolocation to verify attendance from authorized locations.',
+    longDescription:
+      'A web-based attendance system focused on location-aware and browser-based verification for attendance tracking.',
+    tech: ['Python', 'Flask', 'JavaScript', 'Geolocation API', 'Browser Fingerprinting'],
+    github: 'https://github.com/avaleajay170/Smart-Attendance-System-using-Browser-Fingerprint-and-Geolocation',
+    demo: null,
+    color: 'from-amber-500 to-orange-600',
+    emoji: 'SA',
+    featured: false,
+  },
+  {
+    id: 5,
+    title: 'NyayaVault - Secure Legal Document Management',
+    category: 'Full Stack',
+    tags: ['Full Stack', 'AI/ML'],
+    description:
+      'A legal document management platform focused on secure document handling and verification workflows.',
+    longDescription:
+      'A project centered on legal document management, secure verification, and trustworthy digital workflows.',
+    tech: ['React', 'FastAPI', 'PostgreSQL', 'Hyperledger Fabric'],
+    github: 'https://github.com/avaleajay170/NyayaVault',
+    demo: null,
+    color: 'from-blue-500 to-indigo-700',
+    emoji: 'NV',
+    featured: false,
+  },
+  {
+    id: 6,
+    title: 'LibrarySphere - Smart Library & Resource Intelligence Platform',
+    category: 'Full Stack',
+    tags: ['Full Stack'],
+    description:
+      'A smart library management platform for organizing resources, users, borrowing, and library operations.',
+    longDescription:
+      'A library management and resource intelligence project with a focus on practical backend, database, and workflow implementation.',
+    tech: ['Python', 'Flask', 'MySQL', 'Docker'],
+    github: 'https://github.com/avaleajay170/LibrarySphere',
+    demo: null,
+    color: 'from-fuchsia-500 to-pink-700',
+    emoji: 'LS',
+    featured: false,
+  },
+  {
+    id: 7,
+    title: 'Face Recognition Attendance System',
+    category: 'AI/ML',
+    tags: ['AI/ML', 'Full Stack'],
+    description:
+      'An attendance system using face recognition for automated identity-based attendance marking.',
+    longDescription:
+      'A computer-vision based attendance project using face recognition to automate attendance identification.',
+    tech: ['Python', 'OpenCV', 'Face Recognition'],
+    github: 'https://github.com/avaleajay170/Face-Recognition-Attendance-System',
+    demo: null,
+    color: 'from-rose-500 to-red-700',
+    emoji: 'FR',
+    featured: false,
+  },
 ];
 
 export const filterCategories = ['All', 'AI/ML', 'Full Stack'];
