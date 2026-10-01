@@ -36,7 +36,7 @@ const Counter = ({ target, suffix = '', inView }) => {
 
   return (
     <span>
-      {count}
+      {Number.isInteger(target) ? count : count.toFixed(2)}
       {suffix}
     </span>
   );
