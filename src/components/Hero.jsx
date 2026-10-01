@@ -163,10 +163,12 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#6C63FF] to-[#FF6584] blur-2xl opacity-40 animate-pulse-slow scale-110" />
               <div className="absolute inset-[-4px] rounded-full bg-gradient-to-br from-[#6C63FF] via-[#FF6584] to-[#00D4FF] animate-spin-slow opacity-80" />
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-[#16163A] animate-glow">
-                <div className="w-full h-full bg-gradient-to-br from-[#6C63FF] via-[#9B80FF] to-[#FF6584] flex items-center justify-center">
-                  <span className="text-8xl md:text-9xl font-sora font-black text-white select-none">AA</span>
-                </div>
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-[#16163A] animate-glow bg-gradient-to-br from-[#6C63FF] via-[#9B80FF] to-[#FF6584]">
+                <img
+                  src="/profile.jpg"
+                  alt="Ajay Avale"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
 
               <motion.div
