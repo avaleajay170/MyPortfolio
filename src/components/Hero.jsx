@@ -168,7 +168,7 @@ const Hero = () => {
                   src="/profile.jpg"
                   alt="Ajay Avale"
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: 'center 40%' }}
+                  style={{ objectPosition: 'center 30%' }}
                 />
               </div>
 
