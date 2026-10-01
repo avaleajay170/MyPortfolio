@@ -39,11 +39,38 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    await new Promise((res) => setTimeout(res, 1500));
-    console.log('Form data:', data);
-    setSubmitStatus('success');
-    reset();
-    setTimeout(() => setSubmitStatus(null), 5000);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/avaleajay95@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+          _replyto: data.email,
+          _subject: `Portfolio Contact: ${data.subject}`,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || result.success === false) {
+        throw new Error('Unable to send message');
+      }
+
+      setSubmitStatus('success');
+      reset();
+      setTimeout(() => setSubmitStatus(null), 5000);
+    } catch (error) {
+      console.error('Contact form error:', error);
+      setSubmitStatus('error');
+    }
   };
 
   return (
