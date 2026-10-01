@@ -11,6 +11,7 @@ import Timeline from './components/Timeline';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Resume from './components/Resume';
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -29,6 +30,7 @@ function AppContent() {
             <Projects />
             <Timeline />
             <Achievements />
+            <Resume />
             <Contact />
           </main>
           <Footer />
