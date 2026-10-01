@@ -1,5 +1,5 @@
 export const stats = [
-  { label: 'Featured Projects', value: 3, suffix: '', icon: 'PR' },
+  { label: 'Featured Projects', value: 7, suffix: '', icon: 'PR' },
   { label: 'Core Languages', value: 5, suffix: '', icon: 'LG' },
   { label: 'CGPA', value: 9.12, suffix: '/10', icon: 'CG' },
   { label: 'Diploma Percentage', value: 92.06, suffix: '%', icon: 'DP' },
@@ -23,6 +23,24 @@ export const certifications = [
     date: 'Certification',
     credentialUrl: 'https://www.hackerrank.com/certificates/0f41e7d3501a',
     color: 'from-cyan-500 to-blue-600',
+    icon: 'API',
+  },
+  {
+    id: 4,
+    title: 'SQL (Advanced) Certificate',
+    issuer: 'HackerRank',
+    date: 'Certification',
+    credentialUrl: 'https://www.hackerrank.com/certificates/4ee32f6a913d',
+    color: 'from-yellow-500 to-orange-600',
+    icon: 'SQL',
+  },
+  {
+    id: 5,
+    title: 'REST API (Intermediate) Certificate',
+    issuer: 'HackerRank',
+    date: 'Certification',
+    credentialUrl: 'https://www.hackerrank.com/certificates/a9074809c925',
+    color: 'from-sky-500 to-blue-600',
     icon: 'API',
   },
   {
