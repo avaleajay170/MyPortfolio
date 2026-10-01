@@ -80,14 +80,16 @@ const ProjectCard = ({ project, onClick }) => (
         >
           <FaGithub size={14} /> GitHub
         </a>
-        <a
-          href={project.demo}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-xs font-semibold text-[#6E7191] dark:text-[#9999BB] hover:text-[#FF6584] dark:hover:text-[#FF85A0] transition-colors font-inter"
-        >
-          <ExternalLink size={14} /> Live Demo
-        </a>
+        {project.demo && (
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-xs font-semibold text-[#6E7191] dark:text-[#9999BB] hover:text-[#FF6584] dark:hover:text-[#FF85A0] transition-colors font-inter"
+          >
+            <ExternalLink size={14} /> Live Demo
+          </a>
+        )}
       </div>
     </div>
   </motion.div>
@@ -149,10 +151,12 @@ const ProjectModal = ({ project, onClose }) => (
           <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-outline flex-1 justify-center">
             <FaGithub size={18} /> View Code
           </a>
-          <a href={project.demo} target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 justify-center">
-            <ExternalLink size={18} />
-            <span>Live Demo</span>
-          </a>
+          {project.demo && (
+            <a href={project.demo} target="_blank" rel="noopener noreferrer" className="btn-primary flex-1 justify-center">
+              <ExternalLink size={18} />
+              <span>Live Demo</span>
+            </a>
+          )}
         </div>
       </div>
     </motion.div>
@@ -184,7 +188,7 @@ const Projects = () => {
             Things I've <span className="gradient-text">Built</span>
           </h2>
           <p className="mt-4 text-[#6E7191] dark:text-[#9999BB] font-inter max-w-xl mx-auto">
-            A curated collection of projects across web development, AI/ML, and IoT
+            A curated collection of AI-powered, full-stack, and intelligent software projects.
           </p>
         </motion.div>
 
