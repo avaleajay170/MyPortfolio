@@ -187,7 +187,7 @@ const Hero = () => {
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
                 className="absolute -bottom-4 -left-4 glass rounded-2xl px-4 py-2 shadow-glass"
               >
-                <p className="text-xs font-semibold text-[#FF6584] dark:text-[#FF85A0] font-inter">CGPA 9.00 / 10.0</p>
+                <p className="text-xs font-semibold text-[#FF6584] dark:text-[#FF85A0] font-inter">CGPA 9.12 / 10.0</p>
               </motion.div>
 
               {['IT', 'API', 'AI'].map((label, i) => (
