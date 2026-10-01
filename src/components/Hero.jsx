@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import { ArrowDown, Download, Eye, Mail } from 'lucide-react';
+import { ArrowDown, Eye, Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import ParticlesBackground from './ParticlesBackground';
@@ -18,6 +18,10 @@ const Hero = () => {
 
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToResume = () => {
+    document.getElementById('resume')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -108,16 +112,7 @@ const Hero = () => {
                 <span>View Projects</span>
               </motion.button>
 
-              <motion.a
-                href="/resume.pdf"
-                download
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="btn-outline"
-              >
-                <Download size={18} />
-                Download Resume
-              </motion.a>
+              <motion.button onClick={scrollToResume} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="btn-outline"><Eye size={18} /> View Resume</motion.button>
 
               <motion.button
                 onClick={scrollToContact}
