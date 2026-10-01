@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Mail, Phone, Github, Linkedin, Code2, ExternalLink } from 'lucide-react';
+import { Mail, Phone, Code2, ExternalLink } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Resume = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.08 });
@@ -24,8 +25,8 @@ const Resume = () => {
             <div className="flex flex-wrap justify-center gap-3 md:gap-5 mt-4 text-sm text-[#6E7191] dark:text-[#9999BB]">
               <span className="flex items-center gap-1.5"><Phone size={14} /> +91-8624020411</span>
               <span className="flex items-center gap-1.5"><Mail size={14} /> avaleajay95@gmail.com</span>
-              <a href="https://www.linkedin.com/in/ajay-avale-109a022a0/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-[#6C63FF]"><Linkedin size={14} /> LinkedIn</a>
-              <a href="https://github.com/avaleajay170" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-[#6C63FF]"><Github size={14} /> GitHub</a>
+              <a href="https://www.linkedin.com/in/ajay-avale-109a022a0/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-[#6C63FF]"><FaLinkedin size={14} /> LinkedIn</a>
+              <a href="https://github.com/avaleajay170" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-[#6C63FF]"><FaGithub size={14} /> GitHub</a>
               <a href="https://leetcode.com/u/avaleajay170/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-[#6C63FF]"><Code2 size={14} /> LeetCode</a>
             </div>
           </div>
@@ -84,6 +85,6 @@ const ResumeSection = ({ title, children }) => <div><h3 className="text-xl font-
 
 const ResumeItem = ({ title, right, subtitle, children }) => <div><div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1"><div><h4 className="font-sora font-bold text-base text-[#1A1A2E] dark:text-white">{title}</h4>{subtitle && <p className="text-sm mt-1">{subtitle}</p>}</div>{right && <span className="text-xs md:text-sm font-semibold text-[#6C63FF]">{right}</span>}</div>{children}</div>;
 
-const ProjectLinks = ({ github, demo }) => <div className="flex flex-wrap gap-3 mt-2 text-xs"><a href={github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-[#6C63FF] hover:underline"><Github size={13} /> GitHub</a>{demo && <a href={demo} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-[#6C63FF] hover:underline"><ExternalLink size={13} /> Live Demo</a>}</div>;
+const ProjectLinks = ({ github, demo }) => <div className="flex flex-wrap gap-3 mt-2 text-xs"><a href={github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-[#6C63FF] hover:underline"><FaGithub size={13} /> GitHub</a>{demo && <a href={demo} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-[#6C63FF] hover:underline"><ExternalLink size={13} /> Live Demo</a>}</div>;
 
 export default Resume;
