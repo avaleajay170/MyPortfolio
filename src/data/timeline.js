@@ -6,7 +6,7 @@ export const timelineItems = [
     title: 'B.Tech in Information Technology',
     organization: 'Vishwakarma Institute of Technology, Pune',
     description:
-      'Direct second year student with a CGPA of 9.00 / 10.0 and strong interest in full stack development and AI-enabled systems.',
+      'Pursuing B.Tech in Information Technology with a current CGPA of 9.12/10.0.',
     icon: 'ED',
     color: 'from-violet-500 to-purple-600',
   },
@@ -17,7 +17,7 @@ export const timelineItems = [
     title: 'Trainee Software Developer Intern',
     organization: 'Sumago Infotech Pvt. Ltd., Pune',
     description:
-      'Developed full stack web applications using Python, Django, and Flask while gaining practical experience in backend logic, database integration, and UI development.',
+      'Developed full-stack web applications using Python, Django, and Flask. Gained hands-on experience in backend development, database integration, CRUD operations, and UI development during a 6-week industrial training program.',
     icon: 'IN',
     color: 'from-cyan-500 to-blue-600',
   },
@@ -26,21 +26,21 @@ export const timelineItems = [
     type: 'achievement',
     date: '2026',
     title: 'Best Solution Award - Innovate You Techathon 3.0',
-    organization: 'National Level Competition',
+    organization: 'National Level Techathon',
     description:
-      'Finished in the Top 15 out of 455+ teams nationwide and received a cash prize and trophy for innovative solution development.',
+      'Achieved Top 15 out of 455+ teams and received an INR 10,000 prize.',
     icon: 'AW',
     color: 'from-amber-500 to-orange-600',
   },
   {
     id: 4,
-    type: 'award',
-    date: '2024',
-    title: 'Uplifter Award',
-    organization: 'Sumago Infotech Pvt. Ltd.',
+    type: 'research',
+    date: '2026',
+    title: 'Research & Publications',
+    organization: 'Patents and IEEE Publications',
     description:
-      'Recognized for outstanding performance during a 6-week industrial training program in full stack development using Python.',
-    icon: 'UP',
+      'Filed 2 patents and published 2 IEEE papers, including 1 Scopus-indexed publication.',
+    icon: 'RS',
     color: 'from-emerald-500 to-teal-600',
   },
   {
@@ -50,7 +50,7 @@ export const timelineItems = [
     title: 'Diploma in Information Technology',
     organization: 'AISSMS Polytechnic, Pune',
     description:
-      'Completed diploma studies with 92.06%, building a strong practical and academic base in software development fundamentals.',
+      'Completed Diploma in Information Technology with 92.06%.',
     icon: 'DP',
     color: 'from-pink-500 to-rose-600',
   },
